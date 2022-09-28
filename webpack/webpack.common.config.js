@@ -107,6 +107,7 @@ module.exports = (async function () {
         tsConfigPath: './tsconfig.json',
         entryModule: path.resolve('app/app.module#AppModule'),
         mainPath: './app/app-bootstrap.ts',
+        emitClassMetadata: true
       }),
 
       new MiniCssExtractPlugin({
