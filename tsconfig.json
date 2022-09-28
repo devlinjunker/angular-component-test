@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "dist/",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noEmitOnError": false,
+    "suppressImplicitAnyIndexErrors": true,
+    "declaration": false,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "lib": ["dom", "es2015", "es2017.object", "es2016.array.include"],
+    "baseUrl": "./app",
+    "paths": {
+      "*": ["*", "../test/*"]
+    },
+    "incremental": true
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"],
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "strictTemplates": true
+  }
+}
